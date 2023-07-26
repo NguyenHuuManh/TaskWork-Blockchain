@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+      "target": "es6",                      // Phiên bản JavaScript mục tiêu
+      "module": "commonjs",                 // Loại module sử dụng trong mã (commonjs cho Node.js)
+      "outDir": "./dist",                   // Thư mục chứa mã biên dịch
+      "rootDir": "./src",                   // Thư mục chứa mã nguồn TypeScript
+      "strict": true,                       // Bật chế độ kiểm tra cẩn thận và kiểm tra kiểu tường minh
+      "esModuleInterop": true,              // Cho phép tương tác với các module ES6 (vd: import và export)
+      "resolveJsonModule": true,            // Hỗ trợ nhập tệp JSON như một module
+      "sourceMap": true                     // Tạo các tệp Source Map (.map) để dễ dàng gỡ lỗi
+    },
+    "include": ["src/**/*.ts"],             // Đường dẫn đến các tệp TypeScript của bạn
+    "exclude": ["node_modules", "dist"]     // Loại trừ các thư mục không cần thiết
+}
